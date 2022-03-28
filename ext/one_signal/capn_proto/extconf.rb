@@ -17,7 +17,7 @@ CONFIG['CXXFLAGS'] = [(ENV['CXXFLAGS'] || CONFIG['CXXFLAGS']),
 if enable_config('debug')
   CONFIG['CFLAGS'] += " -O0 -ggdb3"
 else
-  $CPPFLAGS += " -DNDEBUG -std=c++11"
+  $CPPFLAGS += " -DNDEBUG -std=c++14"
 end
 
 $LDFLAGS += " -lcapnpc"
